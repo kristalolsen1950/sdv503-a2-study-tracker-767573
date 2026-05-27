@@ -7,7 +7,7 @@ function isValidTopic(topic) {
 function isValidMinutes(minutesInput) {
     const minutes = Number(minutesInput);
     if (Number.isNaN(minutes)) return false;
-    if (!Number.isInterger(minutes)) return false:
+    if (!Number.isInterger(minutes)) return false;
     if (minutes <= 0) return false;
     return true;
 }
