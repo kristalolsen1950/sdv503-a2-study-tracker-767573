@@ -11,3 +11,20 @@ function isValidMinutes(minutesInput) {
     if (minutes <= 0) return false;
     return true;
 }
+function addSession(topic, minutesInput) {
+    if (!isValidTopic(topic)) {
+        console.log('Error: Topic cannot be empty or just spaces.');
+        return;
+}
+if (!isValidMinutes(minutesInput)) {
+    console.log('Error: Minutes must be a whole number greater than zero.');
+    return;
+}
+const minutes = Number(minutesInput);
+const session = {
+    topic: topic.trim(),
+    minutes: minutes,
+};
+sessions.push(session);
+console.log('study sesseion saved.');
+}
